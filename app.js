@@ -4,13 +4,16 @@ const back = document.getElementById('back');
 
 const audio = document.getElementById('audio');
 const songIMG = document.getElementById('id_musicas');
-const titolo = document.getElementById('titoloMusica');
+const titolo = document.getElementById('id_name_musica');
 
 let musicas_ = ['musicas/[YT2mp3.info] - JVSTIN - CLANDESTINA ( TikTok Remix ) (320kbps).mp3', 
 'musicas/[YT2mp3.info] - METAMORPHOSIS (320kbps).mp3'
 ];
 
-let imagenss = ['imagens/Capturar.png', 'hqdefault.png'];
+let imagens_ = ['imagens/Capturar.png', 'hqdefault.png'];
+
+let nomes_musicas = ['CLANDESTINA', 'METAMORPHIS'];
+
 
 initPlayer();
 
@@ -28,10 +31,14 @@ let i = 0;
 next.addEventListener('click', function(){
       i++;
       audio.src = musicas_[i];
+      titolo.innerHTML = nomes_musicas[i];
+      songIMG.src = imagens_[i];
 
       if (i >= musicas_.length) {
            i = 0;
            audio.src = musicas_[i];
+           titolo.innerHTML = nomes_musicas[i];
+           songIMG.src = imagens_[i];
       }
       audio.play(); 
 });
@@ -39,17 +46,22 @@ next.addEventListener('click', function(){
 back.addEventListener('click', function(){
       i--;
       audio.src = musicas_[i];
+      titolo.innerHTML = nomes_musicas[i];
+      songIMG.src = imagens_[i];
 
       if (i <= musicas_.length) {
            i = 0;
            audio.src = musicas_[i];
+           titolo.innerHTML = nomes_musicas[i];
+           songIMG.src = imagens_[i];
       }
       audio.play(); 
 });
 
 function initPlayer(){
       audio.src = musicas_[0];
-      songIMG.src = imagenss[0];
+      songIMG.src = imagens_[0];
+      titolo.innerHTML = nomes_musicas[0];
 }
 
 
