@@ -14,7 +14,6 @@ let imagens_ = ['imagens/Capturar.png', 'hqdefault.png'];
 
 let nomes_musicas = ['CLANDESTINA', 'METAMORPHIS'];
 
-
 initPlayer();
 
 player.addEventListener('click', function() {
@@ -26,6 +25,13 @@ player.addEventListener('click', function() {
             document.getElementById('playy').src = "imagens/play.png";
       }
 });
+
+function trocar_icone() { // cara isso ficou muito bom!!
+      document.getElementById('playy').src = "imagens/pause.png"; 
+      if(player.src = "imagens/pause.png") {
+            player.src = "imagens/play.png";
+      }
+};
 
 let i = 0;
 next.addEventListener('click', function(){
@@ -40,7 +46,8 @@ next.addEventListener('click', function(){
            titolo.innerHTML = nomes_musicas[i];
            songIMG.src = imagens_[i];
       }
-      audio.play(); 
+      trocar_icone();
+      audio.pause(); 
 });
 
 back.addEventListener('click', function(){
@@ -55,7 +62,8 @@ back.addEventListener('click', function(){
            titolo.innerHTML = nomes_musicas[i];
            songIMG.src = imagens_[i];
       }
-      audio.play(); 
+      trocar_icone();
+      audio.pause();
 });
 
 function initPlayer(){
@@ -63,5 +71,3 @@ function initPlayer(){
       songIMG.src = imagens_[0];
       titolo.innerHTML = nomes_musicas[0];
 }
-
-
