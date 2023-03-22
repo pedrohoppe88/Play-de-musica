@@ -189,3 +189,12 @@ form button {
       margin: 0px 5px;
       cursor: pointer;
 }
+
+.errorInput {
+      border: solid 2px red;
+}
+
+.verificadoInput {
+      border: solid 2px rgb(12, 233, 12);
+
+}
