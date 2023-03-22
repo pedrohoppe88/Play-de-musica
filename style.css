@@ -107,73 +107,85 @@ nav img {
       display: flex;
 }
 
-.div_form {
-      display: flex;
-      justify-content: center;
-      background-color: #fff;
-      width: 410px;
-      height: 480px;
-      margin-top: 50px;
-}
-
-.div_form input{
-      display: flex;
-      justify-content: center;
-      margin: 15px;
-      width: 290px;
-      height: 35px;
-      border-radius: 6px;
-      background-color: rgb(21, 21, 52);
-      color: #fff;
-      font-size: 17px;
-}
-
-.div_form_main {
-      display: flex;
-      justify-content: center;
-}
-
-form h1 {
-      display: flex;
-      justify-content: center;
-      margin-top: -100px;
-}
-
-.h1_form {
+.Login_main{
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 25px;
-      font-size: 22px;
+      margin-top: 60px;
 }
 
-form button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-}
-
-
-.div_bnt_login {
+.login {
       display: flex;
       justify-content: center;
       align-content: center;
+      background-color: #fff;
+      width: 450px;
+      height: 540px;
 }
 
+form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
 
-.div_bnt_login button {
-      width: 200px;
+form input {
+      display: flex;
+      justify-content: center;
+      margin: 10px;
+      width: 260px;
       height: 30px;
-      color: #fff;
-      background-color: rgb(21, 21, 52);
-      border: solid 1px black;
-      border-radius: 6px;
       font-size: 17px;
-      cursor: pointer;
-      transition: ease-in-out 0.4s;
 }
 
-.div_bnt_login button:hover {
-      transition: 0.3s;
-      color: rgb(174, 174, 14);
+form button {
+      width: 140px;
+      height: 28px;
+      background-color: #1b1f27;
+      color: #fff;
+      margin-top: 20px;
+      font-size: 18px;
+      cursor: pointer;
+      border: none;
+}
+
+.Logo_login h2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+
+.Modal_cookie {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 75px;
+}
+
+.modal {
+      display: flex;
+      justify-content: center;
+      background-color: black;
+      color: #fff;
+      font-size: 18px;
+      width: 100%;
+      height: 100px;
+}
+
+.modal_bnts {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+}
+
+.modal_bnts button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100px;
+      margin: 0px 5px;
+      cursor: pointer;
 }
